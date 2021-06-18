@@ -14,6 +14,7 @@ int main()
 {	
     int a[100][100];
     int m,n;
+    cout<<"enter m&n =";
     cin>>m>>n;
     int val=1;
     for(int row=0; row<m; row++){
