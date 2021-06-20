@@ -14,29 +14,37 @@ Output: [[7,4,1],[8,5,2],[9,6,3]] */
 #include <iostream>
 
 using namespace std;
-void rotate_image(int a[100][100], int m, int n){
-    for(int col=0; col<n; col++){
-        for(int row=n-1; row>=0; row--){
-            cout<<a[row][col]<<" ";
-        }cout<<endl;
-    }
-}
+
 int main()
-{	
-    int a[100][100];
+{
     int m,n;
-    cout<<"enter m&n =";
     cin>>m>>n;
-    int val=1;
+    int a[m][n];
+    
     for(int row=0; row<m; row++){
         for(int col=0; col<n; col++){
-            a[row][col]=val;
-             val++;
-            cout<<a[row][col]<<" ";
-           
-        }cout<<endl;
-    }
-    cout<<"----------------------"<<endl;
-    rotate_image(a,m,n);
+            cin>>a[row][col];
+        }
+     }
+    
+     int transpose[m][n];
+     for(int row=0; row<m; row++){
+        for(int col=0; col<n; col++){
+            transpose[col][row]=a[row][col];
+        }
+     }
+     
+     
+     for(int row=0; row<m; row++){
+        for(int col=0; col<n/2; col++){
+            swap(transpose[row][col],transpose[row][3-col-1]);
+        }
+     }
+     
+     for(int row=0; row<m; row++){
+        for(int col=0; col<n; col++){
+            cout<<transpose[row][col];
+        }
+     }
     return 0;
 }
