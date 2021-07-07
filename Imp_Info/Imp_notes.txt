@@ -1,1 +1,2 @@
+Placement QNs- almavize - (in array of objects student,gendender and their marks find average marks of only male students.)
 c++ lounchpad prblms - https://github.com/mewcifur28/Cplusplus
