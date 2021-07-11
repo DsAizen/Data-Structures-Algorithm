@@ -18,7 +18,35 @@ int main()
     
     //Re - assign another address to the vairable
     y = &a1;
-    cout<<y;
+    cout<<y<<endl;
+    
+    --------------------------------------------------
+        //Derefrencing of pointer - (&bucket - address), (*address - bucket)
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x = 10;
+    int *xptr = &x;
+    
+    cout<<&x<<endl;
+    cout<<xptr<<endl;
+    cout<< *(&x)<<endl;
+    cout<< *(xptr)<<endl;
+    cout<< *(&xptr)<<endl;
+    cout<< &(*xptr)<<endl;
+    cout<< &xptr<<endl;
+    
+    //o/p - add , add, 10, 10, add, add, add(xptr);
+    
+    int **xxptr = &xptr;//Double Pointer - ** which store the address of another pointer;
+    cout<<xxptr;
+
+    return 0;
+}
+
     
     
 
