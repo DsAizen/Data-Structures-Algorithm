@@ -20,6 +20,10 @@ int main()
     y = &a1;
     cout<<y<<endl;
     
+    return 0;
+}
+
+    
     --------------------------------------------------
         //Derefrencing of pointer - (&bucket - address), (*address - bucket)
 #include <iostream>
@@ -49,6 +53,3 @@ int main()
 
     
     
-
-    return 0;
-}
