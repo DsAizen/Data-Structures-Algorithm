@@ -46,7 +46,7 @@ int main()
     //o/p - add , add, 10, 10, add, add, add(xptr);
     
     int **xxptr = &xptr;//Double Pointer - ** which store the address of another pointer;
-    cout<<xxptr;
+    cout<<xxptr;   // o/p - add(xptr);
 
     return 0;
 }
