@@ -37,7 +37,7 @@ int main()
 {
     int cnt = 0;
     increament(&cnt);
-    cout<<cnt;
+    cout<<cnt;              //o/p - 1;
     return 0;
 }
 
