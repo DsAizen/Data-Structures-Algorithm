@@ -24,3 +24,20 @@ int main()
     cout<<cnt;           //o/p - 1;
     return 0;
 }
+//---------------------------------------------------------------
+//call by reference using pointer - actual parameter passes with reference (&);
+#include <iostream>
+
+using namespace std;
+
+void increament(int *cnt){
+    *cnt = *cnt+1;
+}
+int main()
+{
+    int cnt = 0;
+    increament(&cnt);
+    cout<<cnt;
+    return 0;
+}
+
