@@ -11,14 +11,20 @@ int main()
 {
     int arr[] = {2,5,1,9};
     int n = sizeof(arr)/sizeof(int);
-    int key = 5;
+    int key;
+    cin>>key;
+ 
     
     auto search = find(arr, arr+n,key);
     int index = search - arr;
-    cout<<index;
+    
+       if (index==n){
+           cout<<key<<"key not found ";
+       }else{
+    cout<<"key index = "<< index;
+       }
     
     
 
     return 0;
 }
-
