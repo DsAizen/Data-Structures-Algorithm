@@ -28,3 +28,22 @@ int main()
 
     return 0;
 }
+/////////////////////////////////////////////////////////
+/*#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main()
+{
+
+    int a[] = {1,3,5,2,4};
+    int n=sizeof(a)/sizeof(int);
+    int key=3;
+    auto search=find(a,a+n,key);
+    int index= search-a;
+    cout<<index;
+
+    return 0;
+}*/
+
